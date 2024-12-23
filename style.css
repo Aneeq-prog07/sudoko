@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: black;
+    color: white;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 1px;
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+  }
+  
+  .grid-cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .grid-cell.selected {
+    background-color: #add8e6;
+  }
+  
+  .number-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .number-button {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
